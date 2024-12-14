@@ -22,7 +22,7 @@ variable "custom_subdomain_name" {
   default     = "schaefflerazureopenaiprivate"
 }
 
-variable "dynamic_throttling_enables" {
+variable "dynamic_throttling_enabled" {
   description = "True/False if dynamic_throttling should be enabled for the openai model"
   default     = "false"
 }

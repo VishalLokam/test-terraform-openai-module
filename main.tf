@@ -21,7 +21,7 @@ resource "azurerm_cognitive_account" "azureopenai_cognitive_account1" {
 resource "azurerm_cognitive_deployment" "azureopenai_cognitive_deployment" {
   name                       = var.deployment_name
   cognitive_account_id       = azurerm_cognitive_account.azureopenai_cognitive_account.id
-  dynamic_throttling_enabled = true
+  dynamic_throttling_enabled = var.dynamic_throttling_enabled
   model {
     format = "OpenAI"
     name   = var.model_name
