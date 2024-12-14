@@ -12,7 +12,7 @@ resource "azurerm_cognitive_account" "azureopenai_cognitive_account" {
   kind                       = "OpenAI"
   location                   = var.location
   sku_name                   = "S0"
-  dynamic_throttling_enabled = true
+  dynamic_throttling_enabled = false
 }
 
 # deployment named "gpt35turbo_0125_deployment" inside the cognitive account.
