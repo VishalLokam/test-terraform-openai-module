@@ -31,7 +31,7 @@ resource "azurerm_cognitive_deployment" "azureopenai_cognitive_deployment" {
     name     = "Standard"
     capacity = 50
   }
-  depends_on = [azurerm_cognitive_account.azureopenai_cognitive_account1]
+  depends_on = [azurerm_cognitive_account.azureopenai_cognitive_account]
 }
 
 
