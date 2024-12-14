@@ -20,7 +20,7 @@ resource "azurerm_cognitive_account" "azureopenai_cognitive_account1" {
 # sku is standard with 50k token per minute(TPM) limit. 1 capacity = 1k TPM
 resource "azurerm_cognitive_deployment" "azureopenai_cognitive_deployment" {
   name                       = var.deployment_name
-  cognitive_account_id       = azurerm_cognitive_account.azureopenai_cognitive_account.id
+  cognitive_account_id       = azurerm_cognitive_account.azureopenai_cognitive_account1.id
   dynamic_throttling_enabled = var.dynamic_throttling_enabled
   model {
     format = "OpenAI"
